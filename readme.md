@@ -1,5 +1,4 @@
 ![License-MIT](https://img.shields.io/github/license/ywlib-x/ywlib-x.github.io?style=plastic)
 
-# ywlib-x.github.io
-
-https://ywlib-x.x.github.io
+# ywlib
+https://ywlib-x.github.io
