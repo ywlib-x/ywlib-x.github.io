@@ -5,7 +5,7 @@
 
 以下、GitHub上のソースコード<br>
 
-| `<ywlib>` | [ywlib-x/ywlib/](https://github.com/ywlib-x/ywlib/)
+| \<ywlib> | [ywlib-x/ywlib/](https://github.com/ywlib-x/ywlib/)
 |This|[ywlib-x/ywlib-x.github.io/](https://github.com/ywlib-x/ywlib-x.github.io/)|
 
 ## License
