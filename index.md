@@ -9,6 +9,10 @@
 | :------: | :-----: |
 |[~/ywlib/](https://github.com/ywlib-x/ywlib/)|[~/ywlib-x.github.io/](https://github.com/ywlib-x/ywlib-x.github.io/)|
 
-## License
+##リファレンス
 
-`<ywlib>`はMITライセンスの下で提供されます。
+|\<ywlib>|
+
+## ライセンスについて
+
+\<ywlib>およびywlib-xは、MITライセンスの下で提供されます。
