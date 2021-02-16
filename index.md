@@ -1,10 +1,12 @@
 # ywlib
 
-このWebサイトは、C++の派生ライブラリであるywlibのリファレンスを示すためのものです。
+`<ywlib>`はC++の統合ライブラリです。<br>
+本Webサイトでは、`<ywlib>`のリファレンスを提供します。<br>
+
+`<ywlib>`および本Webサイトのソースは、以下のGitHubレポジトリを参照ください。<br>
+https://github.com/ywlib-x/ywlib-x.github.io/
 
 
-## ywlibとは
+## License
 
-ywlibは、C++の派生ライブラリです。
-特徴としては、
-・(編集中)
+`<ywlib>`はMITライセンスの下で提供されます。
