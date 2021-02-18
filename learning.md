@@ -1,3 +1,5 @@
+<link href="markdown.css" rel="stylesheet"></link>
+
 このページはMarkdown Syntaxを整理したものです。  
 ※）GitHub Flavored Markdownとは異なります。
 
