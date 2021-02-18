@@ -1,4 +1,4 @@
-<link href="ywlib-x.github.io/markdown.css" rel="stylesheet"></link>
+<link href="http://ywlib-x.github.io/markdown.css" rel="stylesheet"></link>
 
 このページはMarkdown Syntaxを整理したものです。  
 ※）GitHub Flavored Markdownとは異なります。
