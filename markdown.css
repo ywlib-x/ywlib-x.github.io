@@ -1,20 +1,17 @@
 html { 
-  font-size: 100%; 
+  line-height: 1.15;
   overflow-y: scroll; 
   -webkit-text-size-adjust: 100%; 
       -ms-text-size-adjust: 100%; 
 }
 
 body {
-  max-width: 42em;
   padding: 1em;
-  margin: auto;
+  margin: 0;
   color: #191970;
-  line-height: 1.5em;
   font-family: "Arial", sans-serif;
   font-family: "Times New Roman", serif;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Consolas", "Courier New", monospace;
   font-size: 12px;
   background: #F8F8FF;
 }
@@ -45,40 +42,32 @@ img {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Roboto';
-  font-weight: normal;
-  color: #111;
-  line-height: 1em;
+  font-weight: bold;
+  color: #000000;
 }
-h4, h5, h6 { font-weight: bold; }
-h1 { font-size: 2.5em; }
-h2 { font-size: 2.0em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.2em; }
-h5 { font-size: 1.0em; }
-h6 { font-size: 0.9em; }
+h1 { font-size: 2.0em; margin: 0.67em 0; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
 
 blockquote {
-  padding-left: 3em;
+  padding-left: 3.0em;
   margin: 0;
-  color: #666666;
-  border-left: 0.5em #EEE solid;
+  color: #708090;
+  border-left: 0.5em #708090 solid;
 }
 
 hr {
-  padding: 0; 
-  margin: 1em 0; 
-  display: block; 
-  height: 2px; 
-  border: 0; 
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #eee; 
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
 
 pre, code, kbd, samp { 
   color: #000; 
   font-family: monospace, monospace; 
-  _font-family: 'Roboto Mono'; 
   font-size: 0.98em; 
 }
 
