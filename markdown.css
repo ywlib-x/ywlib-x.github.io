@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Roboto+Mono:wght@300&display=swap');
 
 html { 
   font-size: 100%; 
@@ -14,7 +13,8 @@ body {
   margin: auto;
   color: #191970;
   line-height: 1.5em;
-  font-family: 'M PLUS Rounded 1c', 'Roboto Mono';
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 12px;
   background: #F8F8FF;
 }
