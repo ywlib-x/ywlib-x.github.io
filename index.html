@@ -1,136 +1,169 @@
-<p>このページはMarkdown Syntaxを整理したものです。<br>
-※）GitHub Flavored Markdownとは異なります。</p>
-
-<h1 id="見出し">見出し</h1>
-<p>見出しは下記のようにナンバー記号(#)と文字列で表現される。<br>
-ナンバー記号(#)と文字列の間には必ずスペースが必要である。</p>
-
-<p>見出しの最大レベルは環境によって異なる可能性がある。<br>
-（筆者の環境ではレベル6は無効のようだ）</p>
-
-<p># 見出し</p>
-<blockquote>
-  <h1 id="見出し-1">見出し</h1>
-</blockquote>
-
-<p>## 見出し</p>
-<blockquote>
-  <h2 id="見出し-2">見出し<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E8%A6%8B%E5%87%BA%E3%81%97-2" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
-</blockquote>
-
-<p>### 見出し</p>
-<blockquote>
-  <h3 id="見出し-3">見出し<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E8%A6%8B%E5%87%BA%E3%81%97-3" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
-</blockquote>
-
-<p>#### 見出し</p>
-<blockquote>
-  <h4 id="見出し-4">見出し<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E8%A6%8B%E5%87%BA%E3%81%97-4" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
-</blockquote>
-
-<p>##### 見出し</p>
-<blockquote>
-  <h5 id="見出し-5">見出し<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E8%A6%8B%E5%87%BA%E3%81%97-5" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h5>
-</blockquote>
-
-<p>######見出し</p>
-<blockquote>
-  <p>######見出し</p>
-</blockquote>
-
-<h1 id="段落">段落</h1>
-<p>空白行を挟むことで段落が区切られたと判断される。</p>
-
-<p>↑は段落、<br>
-<br>
-↑は改行タグを用いた空行である。</p>
-
-<p>段落の初めにスペースをいれてインデントすることは許されていない。<br>
-インデントが必要な場合にはリストなどを使用するように。</p>
-
-<h1 id="改行">改行</h1>
-<p>改行は、改行タグである&lt;br&gt;か、2個以上のスペースを末尾に置くことで行われる。<br>
-そうでない改行は、Markdownとして表示された際に意味を持たない。</p>
-
-<h1 id="協調">協調</h1>
-<h2 id="太字">太字<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E5%A4%AA%E5%AD%97" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
-<p>**アスタリスク**二つで囲むことで、**太字**として認識される。</p>
-<blockquote>
-  <p><strong>アスタリスク</strong>二つで囲むことで、<strong>太字</strong>として認識される。</p>
-</blockquote>
-
-<p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_)を __二つ__ でもよい。</p>
-<blockquote>
-  <p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_)を <strong>二つ</strong> でもよい。</p>
-</blockquote>
-
-<h2 id="イタリック体">イタリック体<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E4%BD%93" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
-<p>*Asterisk*一つで囲むことで、*Italic*として認識される。</p>
-<blockquote>
-  <p><em>Astarisk</em>一つで囲むことで、<em>Italic</em>として認識される。</p>
-</blockquote>
-
-<p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_)を _Two_ でもよい。</p>
-<blockquote>
-  <p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_)を <em>Two</em> でもよい。</p>
-</blockquote>
-
-<h2 id="太字斜字">太字＋斜字<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E5%A4%AA%E5%AD%97%E6%96%9C%E5%AD%97" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
-<p>***Asterisk***三つで囲むことで、***Bold and Italic***として認識される。</p>
-<blockquote>
-  <p><strong><em>Asterisk</em></strong>三つで囲むことで、<strong><em>Bold and Italic</em></strong>として認識される。</p>
-</blockquote>
-
-<p>あるいは、スペースなど区切り字がある場合にはアンダースコア(___)を ___Three___ でもよい。</p>
-<blockquote>
-  <p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_<strong>)を __<em>Three</em></strong> でもよい。</p>
-</blockquote>
-
-<h1 id="引用ブロック">引用ブロック</h1>
-<p>&gt;段落の先頭に「&gt;」を置くことで、その段落は引用ブロックとなる。</p>
-
-<blockquote>
-  <p>段落の先頭に「&gt;」を置くことで、その段落は引用ブロックとなる。</p>
-</blockquote>
-
-<p>この際、「&gt;」と先頭文字の間にスペースがあってもよい。</p>
-
-<p>&gt; 複数の段落を同時に引用ブロックとすることもできる。<br>
-&gt;<br>
-&gt; その場合には、このように空行に「&gt;」を置く。</p>
-
-<blockquote>
-  <p>複数の段落を同時に引用ブロックとすることもできる。</p>
-
-  <p>その場合には、このように空行に「&gt;」を置く。</p>
-</blockquote>
-
-<p>&gt; 引用ブロックを重ねることも、<br>
-&gt; <br>
-&gt;&gt; このように可能である。<br>
-&gt;&gt; <br>
-&gt;&gt;&gt; ただし、段落である必要がある。</p>
-
-<blockquote>
-  <p>引用ブロックを重ねることも、</p>
-
-  <blockquote>
-    <p>このように可能である。</p>
-
-    <blockquote>
-      <p>ただし、段落である必要がある。</p>
-    </blockquote>
-  </blockquote>
-</blockquote>
-
-
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>ywlib-x</title>
+    <meta charset=“UFT-8”>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" context="width=device-widht, initial-scale=1">
+    <meta name="description" content="This is ywlib-x describing usage of ywlib: a low-pollutive integrated library for C++.">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://ywlib-x.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ywlib-x">
+    <meta property="og:title" content="ywlib-x">
+    <meta property="og:twitter:title" content="ywlib-x">
+    <meta property="og:description" content="This is ywlib-x describing usage of ywlib: a low-pollutive integrated library for C++.">
+    <link rel="stylesheet" href="/ywlib-x.github.io/ywlib-x.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="headline">
+        <a>[ywlib-x.github.io](https://github.com/ywlib-x/ywlib-x.github.io/)</a>
+      </h1>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a>Home</a>
+        </li>
+        <li class="nav-list-item">About</li>
+        <li class="nav-list-item">Topic</li>
+      </ul>
+    </header>
+    <p>このページはMarkdown Syntaxを整理したものです。<br>
+      ※）GitHub Flavored Markdownとは異なります。</p>
       
-      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        This site is open source. <a href="https://github.com/ywlib-x/ywlib-x.github.io/edit/main/learning2.md">Improve this page</a>.
-      </div>
+      <h1 id="見出し">見出し</h1>
+      <p>見出しは下記のようにナンバー記号(#)と文字列で表現される。<br>
+      ナンバー記号(#)と文字列の間には必ずスペースが必要である。</p>
       
-    </div>
-    <script src="./ywlib-x.github.io _ provides the references of ywlib._files/anchor.min.js.ダウンロード" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-    
-  
+      <p>見出しの最大レベルは環境によって異なる可能性がある。<br>
+      （筆者の環境ではレベル6は無効のようだ）</p>
+      
+      <p># 見出し</p>
+      <blockquote>
+        <h1 id="見出し-1">見出し</h1>
+      </blockquote>
+      
+      <p>## 見出し</p>
+      <blockquote>
+        <h2 id="見出し-2">見出し<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E8%A6%8B%E5%87%BA%E3%81%97-2" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+      </blockquote>
+      
+      <p>### 見出し</p>
+      <blockquote>
+        <h3 id="見出し-3">見出し<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E8%A6%8B%E5%87%BA%E3%81%97-3" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+      </blockquote>
+      
+      <p>#### 見出し</p>
+      <blockquote>
+        <h4 id="見出し-4">見出し<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E8%A6%8B%E5%87%BA%E3%81%97-4" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+      </blockquote>
+      
+      <p>##### 見出し</p>
+      <blockquote>
+        <h5 id="見出し-5">見出し<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E8%A6%8B%E5%87%BA%E3%81%97-5" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h5>
+      </blockquote>
+      
+      <p>######見出し</p>
+      <blockquote>
+        <p>######見出し</p>
+      </blockquote>
+      
+      <h1 id="段落">段落</h1>
+      <p>空白行を挟むことで段落が区切られたと判断される。</p>
+      
+      <p>↑は段落、<br>
+      <br>
+      ↑は改行タグを用いた空行である。</p>
+      
+      <p>段落の初めにスペースをいれてインデントすることは許されていない。<br>
+      インデントが必要な場合にはリストなどを使用するように。</p>
+      
+      <h1 id="改行">改行</h1>
+      <p>改行は、改行タグである&lt;br&gt;か、2個以上のスペースを末尾に置くことで行われる。<br>
+      そうでない改行は、Markdownとして表示された際に意味を持たない。</p>
+      
+      <h1 id="協調">協調</h1>
+      <h2 id="太字">太字<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E5%A4%AA%E5%AD%97" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+      <p>**アスタリスク**二つで囲むことで、**太字**として認識される。</p>
+      <blockquote>
+        <p><strong>アスタリスク</strong>二つで囲むことで、<strong>太字</strong>として認識される。</p>
+      </blockquote>
+      
+      <p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_)を __二つ__ でもよい。</p>
+      <blockquote>
+        <p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_)を <strong>二つ</strong> でもよい。</p>
+      </blockquote>
+      
+      <h2 id="イタリック体">イタリック体<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E4%BD%93" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+      <p>*Asterisk*一つで囲むことで、*Italic*として認識される。</p>
+      <blockquote>
+        <p><em>Astarisk</em>一つで囲むことで、<em>Italic</em>として認識される。</p>
+      </blockquote>
+      
+      <p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_)を _Two_ でもよい。</p>
+      <blockquote>
+        <p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_)を <em>Two</em> でもよい。</p>
+      </blockquote>
+      
+      <h2 id="太字斜字">太字＋斜字<a class="anchorjs-link " href="https://ywlib-x.github.io/learning2.html#%E5%A4%AA%E5%AD%97%E6%96%9C%E5%AD%97" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+      <p>***Asterisk***三つで囲むことで、***Bold and Italic***として認識される。</p>
+      <blockquote>
+        <p><strong><em>Asterisk</em></strong>三つで囲むことで、<strong><em>Bold and Italic</em></strong>として認識される。</p>
+      </blockquote>
+      
+      <p>あるいは、スペースなど区切り字がある場合にはアンダースコア(___)を ___Three___ でもよい。</p>
+      <blockquote>
+        <p>あるいは、スペースなど区切り字がある場合にはアンダースコア(_<strong>)を __<em>Three</em></strong> でもよい。</p>
+      </blockquote>
+      
+      <h1 id="引用ブロック">引用ブロック</h1>
+      <p>&gt;段落の先頭に「&gt;」を置くことで、その段落は引用ブロックとなる。</p>
+      
+      <blockquote>
+        <p>段落の先頭に「&gt;」を置くことで、その段落は引用ブロックとなる。</p>
+      </blockquote>
+      
+      <p>この際、「&gt;」と先頭文字の間にスペースがあってもよい。</p>
+      
+      <p>&gt; 複数の段落を同時に引用ブロックとすることもできる。<br>
+      &gt;<br>
+      &gt; その場合には、このように空行に「&gt;」を置く。</p>
+      
+      <blockquote>
+        <p>複数の段落を同時に引用ブロックとすることもできる。</p>
+      
+        <p>その場合には、このように空行に「&gt;」を置く。</p>
+      </blockquote>
+      
+      <p>&gt; 引用ブロックを重ねることも、<br>
+      &gt; <br>
+      &gt;&gt; このように可能である。<br>
+      &gt;&gt; <br>
+      &gt;&gt;&gt; ただし、段落である必要がある。</p>
+      
+      <blockquote>
+        <p>引用ブロックを重ねることも、</p>
+      
+        <blockquote>
+          <p>このように可能である。</p>
+      
+          <blockquote>
+            <p>ただし、段落である必要がある。</p>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+      
+      
+            
+            <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+              This site is open source. <a href="https://github.com/ywlib-x/ywlib-x.github.io/edit/main/learning2.md">Improve this page</a>.
+            </div>
+            
+          </div>
+          <script src="./ywlib-x.github.io _ provides the references of ywlib._files/anchor.min.js.ダウンロード" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+          <script>anchors.add();</script>
+          
+        
+      
+  </body>
+</html>
