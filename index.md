@@ -7,8 +7,9 @@ ywlibはC++の統合ライブラリです。<br>
 |:--------:|:-------:|
 |[~/ywlib/](https://github.com/ywlib-x/ywlib/)|[~/ywlib-x.github.io/](https://github.com/ywlib-x/ywlib-x.github.io/)|
 
-[test](test.html)
-[learning](learning.md)
+[test](test.html)  
+[learning](learning.md)  
+[learning2](learning2.md)
 
 ## リファレンス
 
