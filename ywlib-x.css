@@ -1,10 +1,10 @@
 body { margin:0 0 0; padding:0; }
 
-.HeaderLogo {
+#HeaderLogo {
   width:  50px;
   height: auto;
 }
 
-.MainFrame {
+#MainFrame {
   margin: 50px, 0, 0;
 }
