@@ -7,6 +7,7 @@ body {
 #Header {
   padding: 5px 0px 5px 0px;
   background-color: #191970;
+  display: inline-block;
 }
 
 #HeaderLogo {
