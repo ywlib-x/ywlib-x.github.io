@@ -3,14 +3,14 @@
 
 ## 前提
 
-[`concept _quant`](../../concept.yw/_quant.md)<br>
-[`typename math::ret_type_fat`](../ret_type_fat.md)<br>
-[`function math::round`](../round.md)<br>
-[`function _zyx::ywmath_pown`](../ywmath_powi.md)<br>
-[`function math::abs`](../abs.md)<br>
-[`class type::props`](../../utility/props.md)<br>
-[`function math::factorial_inv`](../factorial_inv.md)<br>
-[`constant type::is_same`](../../type.yw/is_same)<br>
+[`concept _quant`](../concept.yw/_quant.md)<br>
+[`typename math::ret_type_fat`](./ret_type_fat.md)<br>
+[`function math::round`](./round.md)<br>
+[`function _zyx::ywmath_pown`](./ywmath_powi.md)<br>
+[`function math::abs`](./abs.md)<br>
+[`class type::props`](../utility/props.md)<br>
+[`function math::factorial_inv`](./factorial_inv.md)<br>
+[`constant type::is_same`](../type.yw/is_same)<br>
 
 ## 実装
 
