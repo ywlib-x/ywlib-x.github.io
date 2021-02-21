@@ -5,15 +5,25 @@ body {
 }
 
 #Header {
-  padding: 5px 0px 5px 0px;
+  margin:  0;
+  padding: 0;
+  height: auto;
+  width:  auto;
   background-color: #191970;
-  display: inline-block;
 }
 
 #HeaderLogo {
-  width:  80px;
-  height: auto;
-  margin: 0;
+  height: 50px;
+  width:  auto;
+  margin: 5px;
+  float: left;
+}
+
+#Index {
+  display: inline-block;
+  margin-left: 10px;
+  float: left;
+  list-style: none;
 }
 
 #MainFrame {
