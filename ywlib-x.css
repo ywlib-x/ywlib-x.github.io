@@ -1,5 +1,10 @@
 body { margin:0 0 0; padding:0; }
 
+#Header {
+  marigin: 5 0 5;
+  background-color: #191970;
+}
+
 #HeaderLogo {
   width:  80px;
   height: auto;
