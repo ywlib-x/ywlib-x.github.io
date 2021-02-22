@@ -12,20 +12,82 @@
   <meta property="og:title" content="ywlib-x">
   <meta property="og:twitter:title" content="ywlib-x">
   <meta property="og:description" content="This is ywlib-x describing usage of ywlib: a low-pollutive integrated library for C++.">
-  <link rel="stylesheet" href="/ywlib-x.github.io/ywlib-x.css">
-  <script language="JavaScript"><!--
-    function SwitchFrame(NewUrl) { docoment.getElementById("MainFrame").contentDocument.lacation.replace(NewUrl); }
-  // --></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #F8F8FF;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+    img#Logo {
+      background-color: #191970;
+      margin: 0;
+      padding: 1px;
+      height: 40px;
+      width: auto;
+      float: left;
+    }
+    #Header {
+      background-color: #191970;
+      margin: 0px;
+      padding: 1px 0px;
+      height: 40px;
+      width: 100vw;
+      color: #F8F8FF;
+    }
+    #Index {
+      margin: 0px;
+      padding: 0px;
+      display: inline-block;
+    }
+    li {
+      float: left;
+      list-style: none;
+      padding: auto;
+      color: #F8F8FF;
+      font-size: auto;
+    }
+    #Frame {
+      position: relative;
+      width: 100vw;
+      height: 0;
+      padding-top: calc(100vh - 42px);
+    }
+    #Frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: calc(100vh - 42px);
+      border: 0;
+    }
+  </style>
+  <script languange="javascript">
+    function SetUrl(url) {
+
+    }
+  </script>
 </head>
 <body>
+  <img id="Logo" src="./ywlib.png" alt="ywlib logo" title="ywlib logo">
   <div id="Header">
-    <img id="HeaderLogo" src="/ywlib-x.github.io/ywlib.png" alt="ywlib logo" title="ywlib logo">
+    <button id="ButtonTop" type="button" onclick="">Top</button>
     <ul id="Index">
-      <li class="IndexItems"><a>Top</a></li>
+      <li class="IndexItems"><a id="TopText">Top</a></li>
       <li class="IndexItems"><a>Headers</a></li>
       <li class="IndexItems"><a>Category</a></li>
     </ul>
   </div>
-  <iframe id="MainFrame" src="ywlib-x.github.io/learning.html" title="MainFrame" />
+  <div id="Frame">
+    <iframe id="MainFrame" src="https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%A4%E3%83%A9%E3%83%BC%E5%B1%95%E9%96%8B" title="MainFrame" />
+  </div>
+  <script language="javascript" type="text/javascript">
+    document.getElementById("ButtonTop").onclick = function GoToTop() {
+      document.getElementById("TopText").innerText = "tttt";
+      docoment.getElementById("MainFrame").contentWindow.location.replace("https://github.com/ywlib-x/ywlib-x.github.io");
+    }
+  </script>
 </body>
 </html>
