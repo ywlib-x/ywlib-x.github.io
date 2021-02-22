@@ -46,7 +46,6 @@
       float: left;
       list-style: none;
       padding: auto;
-      margin: 0px 20px;
       color: #F8F8FF;
       font-size: auto;
     }
@@ -66,8 +65,9 @@
     }
   </style>
   <script languange="javascript">
-    function SetUrl(url) {
-
+    function js_alert(url) {
+      alert("Top Pushed!");
+      document.getElementById("MainFrame").contentWindow.location.replace(url);
     }
   </script>
 </head>
@@ -76,7 +76,7 @@
   <div id="Header">
     <button id="ButtonTop" type="button" onclick="">Top</button>
     <ul id="Index">
-      <li class="IndexItems"><a id="TopText">Top</a></li>
+      <li class="IndexItems"><a href="#" onclick="js_alert(https://ja.wikipedia.org)">Top</a></li>
       <li class="IndexItems"><a>Headers</a></li>
       <li class="IndexItems"><a>Category</a></li>
     </ul>
@@ -84,11 +84,5 @@
   <div id="Frame">
     <iframe id="MainFrame" src="https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%A4%E3%83%A9%E3%83%BC%E5%B1%95%E9%96%8B" title="MainFrame" />
   </div>
-  <script language="javascript" type="text/javascript">
-    document.getElementById("ButtonTop").onclick = function GoToTop() {
-      document.getElementById("TopText").innerText = "tttt";
-      docoment.getElementById("MainFrame").contentWindow.location.replace("https://github.com/ywlib-x/ywlib-x.github.io");
-    }
-  </script>
 </body>
 </html>
