@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <title>ywlib-x: Headers</title>
-  <meta charset=“UFT-8”>
-  <meta name="author" content="Yw Ninefold">
-  <meta name="viewport" context="width=device-widht, initial-scale=1">
-</head>
-<body>
-  <h1><strong>Ywlib-x</strong> helps to look up what between Y & W.</h1>
-  <h2>what is &lt;ywlib&gt;</h2>
-  <p>
-    <code>&lt;ywlib&gt;</code> is a low-pollutive integrated C++ library.<br>
-    You can use <code>&lt;ywlib&gt;</code> with any other libraries only if they <em>don't</em> use <code>namespace yw</code>.<br>
-    Moreover, you need no additional predefined macros for <code>&lt;ywlib&gt;</code>.
-  </p>
-  <p>
-    I'm sorry to say that, however, <code>&lt;ywlib&gt;</code> is now constructing.<br>
-    Only a few functions, typenames, constants, concepts are available.<br>
-  </p>
-  <p>
-    Latest version of <code>&lt;ywlib&gt;</code> is <span id="Ywlib-Version">v0.1</span>
-  </p>
-  <h2>Structure</h2>
-  <h3><a href="./ywlib-0.html">ywlib-0</a></h3>
-  <p>Almost all the contents are constant-evaluable.<br>
-    <a href="./ywlib-0/type.html"><code>&lt;type.hpp&gt;</code></a>, 
-    <a href="./ywlib-0/concept.html"><code>&lt;concept.hpp&gt;</code></a>, 
-    <a href="./ywlib-0/utility.html"><code>&lt;utility.hpp&gt;</code></a>, 
-    <a href="./ywlib-0/array.html"><code>&lt;array.hpp&gt;</code></a>, 
-    <a href="./ywlib-0/math.html"><code>&lt;math.hpp&gt;</code></a>
-  </p>
-  <h1>
-    ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-  </h1>
-  <h3><a href="./ywlib-1.html">ywlib-1</a></h3>
-  <p>There are useful functions, for example dynamic-array, string, in/outputs, etc..<br>
-    <a href="./ywlib-1/darray.html"><code>&lt;darray.hpp&gt;<code></a>, 
-  </p>
-</body>
+  <head>
+    <title>ywlib-x: Headers</title>
+    <meta charset=“UFT-8”>
+    <meta name="author" content="Yw Ninefold">
+    <meta name="viewport" context="width=device-widht, initial-scale=1">
+    <link rel="stylesheet" href="ywlib-x.css">
+  </head>
+  <body>
+    <h1>Headers in <code>&lt;ywlib&gt;</code></h1>
+    <p>There is a list of all defined in <code>&lt;ywlib&gt;</code>.<br></p>
+    <h2><a href="./ywlib-0.html"><code>&lt;ywlib-0.hpp&gt;</code></a></h2>
+    <p>Almost all contens defined here are constant-evaluable.</p>
+    <table border="1"><tr><th>Header Name</th><th>Description</th></tr>
+      <tr>
+        <td><a href="./ywlib-0/type.html"><code>&lt;type.hpp&gt;</code></a></td>
+        <td>Many template-typenames and template-constants are defined.</td>
+      </tr>
+      <tr>
+        <td><a href="./ywlib-0/concept.html"><code>&lt;concept.hpp&gt;</code></a></td>
+        <td>Many concepts are defined.</td>
+      </tr>
+      <tr>
+        <td><a href="./ywlib-0/utility.html"><code>&lt;utility.hpp&gt;</code></a></td>
+        <td>Many useful template-functions are defined.</td>
+      </tr>
+      <tr>
+        <td><a href="./ywlib-0/sarray.html"><code>&lt;sarray.hpp&gt;</code></a></td>
+        <td>A template class, <code>class sarray&lt;T_, N_&gt;</code> (static-array or fixed-size-array) is defined.</td>
+      </tr>
+      <tr>
+        <td><a href="./ywlib-1/vector.html"><code>&lt;vector.hpp&gt;</code></a></td>
+        <td>A template class, <code>class vector&lt;N_&gt;</code> (mathemetical vector) is defined.</td>
+      </tr>
+      <tr>
+        <td><a href="./ywlib-0/constr.html"><code>&lt;constr.hpp&gt;</code></a></td>
+        <td>A template class, <code>class constr&lt;T_&gt;</code> (string class for constant-evaluating) is defined.</td>
+      </tr>
+      <tr>
+        <td><a href="./ywlib-0/algorithm.html"><code>&lt;algorithm.hpp&gt;</code></a></td>
+        <td>Many useful functions used with <code>sarray&lt;T_, N_&gt;</code>, <code>vecotr&lt;N_&gt;</code> and/or <code>constr&lt;N_&gt;</code> are defined.</td>
+      </tr>
+      <tr>
+        <td><a href="./ywlib-0/math.html"><code>&lt;math.hpp&gt;</code></a></td>
+        <td>Almost all mathemetical functions are defined.</td>
+      </tr>
+    </table>
+
+    <h2><a href="./ywlib-1.html"><code>&lt;ywlib-1.hpp&gt;</code></a></h2>
+    <p>Many fundamental functions/systems are available.</p>
+    <table border="1"><tr><th>Header Name</th><th>Description</th></tr>
+      <tr>
+        <td><a href="./ywlib-1/darray.html"><code>&lt;darray.hpp&gt;</code></a></td>
+        <td>A template class, <code>class darray&lt;T_&gt;</code> (dynamic-array or variable-size-array) is defined.</td>
+      </tr>
+      <tr>
+        <td><a href="./ywlib-1/string.html"><code>&lt;string.hpp&gt;</code></a></td>
+        <td>A template class, <code>class stringy&lt;T_&gt;</code> (string class) is defined.</td>
+      </tr>
+      <tr>
+        <td><a href="./ywlib-1/io.html"><code>&lt;io.hpp&gt;</code></a></td>
+        <td>Many functions and classes for i/o are defined.</td>
+      </tr>
+    </table>
+  </body>
 </html>
