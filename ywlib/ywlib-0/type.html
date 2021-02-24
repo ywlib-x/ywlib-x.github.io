@@ -37,7 +37,6 @@
     <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
       <tr><td><code>template&lt;typename T_&gt; using add_const;</code></td><td>Adds const-qualifier to the type.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; using add_volatile;</code></td><td>Adds volatile-qualifier to the type.</td></tr>
-      <tr><td><code>template&lt;typename T_&gt; using add_cv;</code></td><td>Adds const and volatile-qualifier to the type.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; using add_ref_lv;</code></td><td>Adds left-value-reference to the type.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; using add_ref_rv;</code></td><td>Adds right-value-reference to the type.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; using add_ptr;</code></td><td>Adds pointer to the type.</td></tr>
@@ -52,16 +51,16 @@
     </table>
 
     <h2>Check_Fundamental</h2>
-    <p>There are template-constants about fundamental-type.</p>
+    <p>There are template-constants and concepts about fundamental-type.</p>
     <h3>Constants</h3>
     <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
       <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_void;</code></td><td>checks if <code>T_</code> is <code>void</code>.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_nullptr;</code></td><td>checks if <code>T_</code> is <code>type::nullptr</code>.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_bool;</code></td><td>checks if <code>T_</code> is <code>bool</code>.</td></tr>
-      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_cat;</code></td><td>checks if <code>T_</code> is <code>cat-type</code>.</td></tr>
-      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_int;</code></td><td>checks if <code>T_</code> is <code>int-type</code>.</td></tr>
-      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_nat;</code></td><td>checks if <code>T_</code> is <code>nat-type</code>.</td></tr>
-      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_fat;</code></td><td>checks if <code>T_</code> is <code>fat-type</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_cat;</code></td><td>checks if <code>T_</code> is cat-type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_int;</code></td><td>checks if <code>T_</code> is int-type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_nat;</code></td><td>checks if <code>T_</code> is nat-type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_fat;</code></td><td>checks if <code>T_</code> is fat-type.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_count;</code></td><td>checks if <code>T_</code> is for counting.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_quant;</code></td><td>checks if <code>T_</code> is for quantifying.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_integral;</code></td><td>checks if <code>T_</code> has integral value.</td></tr>
@@ -69,12 +68,31 @@
       <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_unsigned;</code></td><td>checks if <code>T_</code> has unsigned value.</td></tr>
       <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_fundamental;</code></td><td>checks if <code>T_</code> is fundamental-type.</td></tr>
     </table>
+    <h3>Concepts</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><code>concept _int;</code></td><td>requires int-type.</td></tr>
+      <tr><td><code>concept _nat;</code></td><td>requires nat-type.</td></tr>
+      <tr><td><code>concept _fat;</code></td><td>requires fat-type.</td></tr>
+      <tr><td><code>concept _count;</code></td><td>requires int-type or nat-type.</td></tr>
+      <tr><td><code>concept _quant;</code></td><td>requires int-type, nat-type or fat-type.</td></tr>
+      <tr><td><code>concept _integral;</code></td><td>requires integral-type.</td></tr>
+      <tr><td><code>concept _fundamental;</code></td><td>requires fundamental-type.</td></tr>
+    </table>
 
     <h2>Check_CV/Ref/Ptr/Array</h2>
     <p>There are template-constants about CV-qualifier, reference, pointer and array.</p>
     <h3>Constants</h3>
     <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
-      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_AAA;</code></td><td>checks if <code>T_</code> is <code>AAA</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_const;</code></td><td>checks if <code>T_</code> has const-qualifier.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_volatile;</code></td><td>checks if <code>T_</code> has volatile-qualifier.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_ref_lv;</code></td><td>checks if <code>T_</code> is left-value-reference.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_ref_rv;</code></td><td>checks if <code>T_</code> is right-value-reference.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_ref;</code></td><td>checks if <code>T_</code> is reference.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_ptr;</code></td><td>checks if <code>T_</code> is pointer.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_array_bounded;</code></td><td>checks if <code>T_</code> is bounded-array.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_array_unbounded;</code></td><td>checks if <code>T_</code> is unbounded-array.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_array;</code></td><td>checks if <code>T_</code> is array.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_array;</code></td><td>checks if <code>T_</code> is array.</td></tr>
     </table>
 
     
