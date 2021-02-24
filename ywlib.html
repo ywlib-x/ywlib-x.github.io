@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>ywlib-x: &lt;ywlib&gt;</title>
+    <meta charset=“UFT-8”>
+    <meta name="author" content="Yw Ninefold">
+    <meta name="viewport" context="width=device-widht, initial-scale=1">
+    <link rel="stylesheet" href="ywlib-x.css">
+  </head>
+  <body>
+    <h1>Header: <code>&lt;ywlib&gt;</code></h1>
+    <p>This is the primal-header of ywlib-system.<br>You can access to all contents only if coding <code>#include &lt;ywlib&gt;</code> after <code>#define _ywlib_</code>.</p>
+    <p>In this header, some premitive typenames are defined and second-headers are included.<br>All the contents declared in <code>&lt;ywlib&gt;</code> and its sub-headers are surrounded by <code>namespace yw</code>.</p>
+
+    <h2>Definitions</h2>
+    <h3>cat-types</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><a href="./ywlib/cat-type.html"><code>using cat0;</code></a></td><td>is cat-type whose size is 1 byte. (equals to <code>char</code>)</td></tr>
+      <tr><td><a href="./ywlib/cat-type.html"><code>using cat1;</code></a></td><td>is cat-type whose size is 1 byte. (equals to <code>char8_t</code>)</td></tr>
+      <tr><td><a href="./ywlib/cat-type.html"><code>using cat2;</code></a></td><td>is cat-type whose size is 2 byte. (equals to <code>char16_t</code>)</td></tr>
+      <tr><td><a href="./ywlib/cat-type.html"><code>using cat4;</code></a></td><td>is cat-type whose size is 4 byte. (equals to <code>char32_t</code>)</td></tr>
+    </table>
+    <h3>int-types</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><a href="./ywlib/int-type.html"><code>using int1;</code></a></td><td>is int-type whose size is 1 byte. (equals to <code>signed char</code>)</td></tr>
+      <tr><td><a href="./ywlib/int-type.html"><code>using int2;</code></a></td><td>is int-type whose size is 2 byte. (equals to <code>signed short</code>)</td></tr>
+      <tr><td><a href="./ywlib/int-type.html"><code>using int4;</code></a></td><td>is int-type whose size is 4 byte. (equals to <code>signed int</code>)</td></tr>
+      <tr><td><a href="./ywlib/int-type.html"><code>using int8;</code></a></td><td>is int-type whose size is 8 byte. (equals to <code>signed long long</code>)</td></tr>
+    </table>
+    <h3>nat-types</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><a href="./ywlib/nat-type.html"><code>using nat1;</code></a></td><td>is nat-type whose size is 1 byte. (equals to <code>unsigned char</code>)</td></tr>
+      <tr><td><a href="./ywlib/nat-type.html"><code>using nat2;</code></a></td><td>is nat-type whose size is 2 byte. (equals to <code>unsigned short</code>)</td></tr>
+      <tr><td><a href="./ywlib/nat-type.html"><code>using nat4;</code></a></td><td>is nat-type whose size is 4 byte. (equals to <code>unsigned int</code>)</td></tr>
+      <tr><td><a href="./ywlib/nat-type.html"><code>using nat8;</code></a></td><td>is nat-type whose size is 8 byte. (equals to <code>unsigned long long</code>)</td></tr>
+    </table>
+    <h3>fat-types</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><a href="./ywlib/fat-type.html"><code>using fat1;</code></a></td><td>is fat-type whose size is 4 byte. (equals to <code>float</code>)</td></tr>
+      <tr><td><a href="./ywlib/fat-type.html"><code>using fat2;</code></a></td><td>is fat-type whose size is 8 byte. (equals to <code>double</code>)</td></tr>
+    </table>
+    <h3>fat-types</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><a href="./ywlib/fat-type.html"><code>using fat1;</code></a></td><td>is fat-type whose size is 4 byte. (equals to <code>float</code>)</td></tr>
+      <tr><td><a href="./ywlib/fat-type.html"><code>using fat2;</code></a></td><td>is fat-type whose size is 8 byte. (equals to <code>double</code>)</td></tr>
+    </table>
+    <h3>byte-type</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><a href="./ywlib/byte.html"><code>using byte;</code></a></td><td>is byte-type used for dealing binary-data.</td></tr>
+    </table>
+    <h3>preferred-cat-type</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><a href="./ywlib/preferred-type.html"><code>using catt;</code></a></td><td>is preferred-cat-type. You can change the assignation for your system.</td></tr>
+    </table>
+    <h3>deprecated-types</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><a href="./ywlib/deprecated-type.html"><code>using _std::wc_t;</code></a></td><td>equals to wchar_t.</td></tr>
+      <tr><td><a href="./ywlib/deprecated-type.html"><code>using _std::sl_t;</code></a></td><td>equals to signed long.</td></tr>
+      <tr><td><a href="./ywlib/deprecated-type.html"><code>using _std::ul_t;</code></a></td><td>equals to unsigned long.</td></tr>
+      <tr><td><a href="./ywlib/deprecated-type.html"><code>using _std::ld_t;</code></a></td><td>equals to long double.</td></tr>
+    </table>
+
+    <h2>Included Headers</h2>
+    <p>These headers are automatically included if you code <code>#define _ywlib_</code> before including this header.</p>
+    <h3>Sub-Headers</h3>
+    <table border="1"><tr><th>Header</th><th>Description</th></tr>
+      <tr><td><a href="./ywlib/ywlib-0.html"><code>&lt;ywlib-0&gt;</code></a></td><td>is a second-header whose almost all contents are constant-evaluable.</td></tr>
+      <tr><td><a href="./ywlib/ywlib-1.html"><code>&lt;ywlib-1&gt;</code></a></td><td>is a second-header which serves many useful contents but non-constant-evaluable.</td></tr>
+    </table>
+  </body>
+</html>

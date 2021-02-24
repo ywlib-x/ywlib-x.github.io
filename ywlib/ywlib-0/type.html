@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>ywlib-x: ywlib-0/type</title>
+    <meta charset=“UFT-8”>
+    <meta name="author" content="Yw Ninefold">
+    <meta name="viewport" context="width=device-widht, initial-scale=1">
+    <link rel="stylesheet" href="ywlib-x.css">
+  </head>
+  <body>
+    <h1>ywlib-0/type.hpp</h1>
+    <p>Many template-typenames and template-constants are defined.</p>
+
+    <h2>Primal</h2>
+    <p>There are primal template-typenames and constants here.</p>
+    <h3>Typenames</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><code>using type::nullptr_t;</code></td><td>equals to <code>decltype(nullptr)</code>, <code>std::nullptr_t</code>.</td></tr>
+      <tr><td><code>template&lt;typename... Ts_&gt; using type::void_t;</code></td><td>equals to <code>void</code> if all <code>Ts_...</code> are valid; Otherwise gets invalid.</td></tr>
+      <tr><td><code>template&lt;bool B_, typename T_ = void&gt; using type::breaker;</code></td><td>breaks the type-infering if <code>B_</code> is false.</td></tr>
+      <tr><td><code>template&lt;bool B_, typename T1_, typename T2_&gt; using type::switch_;</code></td><td>switches the type to <code>T1_</code> if <code>B_</code> is <code>true</code>; Otherwise <code>T2_</code></td></tr>
+      <tr><td><code>using intt;</code></td><td>is int-type whose size equals to that of a pointer.</td></tr>
+      <tr><td><code>using natt;</code></td><td>is nat-type whose size equals to that of a pointer.</td></tr>
+      <tr><td><code>using fatt;</code></td><td>is fat-type whose size equals to that of a pointer.</td></tr>
+    </table>
+    <h3>Constants</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><code>template&lt;bool... Bs_&gt; inline constexpr bool conjunction;</code></td><td>checks if all arguments in <code>Bs_...</code> are <code>true</code></td></tr>
+      <tr><td><code>template&lt;bool... Bs_&gt; inline constexpr bool disjunction;</code></td><td>checks if at least an argument in <code>Bs_...</code> is <code>true</code>.</td></tr>
+      <tr><td><code>template&lt;typename T1_, typename T2_&gt; inline constexpr bool type::is_same;</code></td><td>checks if <code>T1_</code> equals to <code>T2_</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_, typename... Ts_&gt; inline constexpr bool type::is_included;</code></td><td>checks if <code>T_</code> is included in <code>Ts_...</code>.</td></tr>
+    </table>
+
+    <h2>Add/Remove</h2>
+    <p>There are template-typenames added or removed anything.</p>
+    <h3>Typenames</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><code>template&lt;typename T_&gt; using add_const;</code></td><td>Adds const-qualifier to the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using add_volatile;</code></td><td>Adds volatile-qualifier to the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using add_cv;</code></td><td>Adds const and volatile-qualifier to the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using add_ref_lv;</code></td><td>Adds left-value-reference to the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using add_ref_rv;</code></td><td>Adds right-value-reference to the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using add_ptr;</code></td><td>Adds pointer to the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using remove_const;</code></td><td>Removes const-qualifier from the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using remove_volatile;</code></td><td>Removes volatilet-qualifier from the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using remove_cv;</code></td><td>Removes const and volatile-qualifier from the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using remove_ref;</code></td><td>Removes reference from the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using remove_cvref;</code></td><td>Removes reference and const and volatile-qualifier from the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using remove_ptr;</code></td><td>Removes pointer from the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using remove_extent;</code></td><td>Removes extent from the type.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; using remove_extent_all;</code></td><td>Removes all extents from the type.</td></tr>
+    </table>
+
+    <h2>Check_Fundamental</h2>
+    <p>There are template-constants about fundamental-type.</p>
+    <h3>Constants</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_void;</code></td><td>checks if <code>T_</code> is <code>void</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_nullptr;</code></td><td>checks if <code>T_</code> is <code>type::nullptr</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_bool;</code></td><td>checks if <code>T_</code> is <code>bool</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_cat;</code></td><td>checks if <code>T_</code> is <code>cat-type</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_int;</code></td><td>checks if <code>T_</code> is <code>int-type</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_nat;</code></td><td>checks if <code>T_</code> is <code>nat-type</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_fat;</code></td><td>checks if <code>T_</code> is <code>fat-type</code>.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_count;</code></td><td>checks if <code>T_</code> is for counting.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_quant;</code></td><td>checks if <code>T_</code> is for quantifying.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_integral;</code></td><td>checks if <code>T_</code> has integral value.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_signed;</code></td><td>checks if <code>T_</code> has signed value.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_unsigned;</code></td><td>checks if <code>T_</code> has unsigned value.</td></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_fundamental;</code></td><td>checks if <code>T_</code> is fundamental-type.</td></tr>
+    </table>
+
+    <h2>Check_CV/Ref/Ptr/Array</h2>
+    <p>There are template-constants about CV-qualifier, reference, pointer and array.</p>
+    <h3>Constants</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr><td><code>template&lt;typename T_&gt; inline constexpr bool type::is_AAA;</code></td><td>checks if <code>T_</code> is <code>AAA</code>.</td></tr>
+    </table>
+
+    
+    <h3>Add/Remove</h3>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr>
+        <td><code>template&lt;typename T_&gt; using add_const;</code></td>
+        <td>adds <code>const</code> qualifier.</td>
+      </tr>
+      <tr>
+        <td><code>template&lt;typename T_&gt; using add_volatile;</code></td>
+        <td>adds <code>volatile</code> qualifier.</td>
+      </tr>
+      <tr>
+        <td><code>template&lt;typename T_&gt; using add_cv;</code></td>
+        <td>adds <code>const</code> and <code>volatile</code> qualifier.</td>
+      </tr>
+      <tr>
+        <td><code>template&lt;typename T_&gt; using add_ref_lv;</code></td>
+        <td>adds lvalue-reference.</td>
+      </tr>
+      <tr>
+        <td><code>template&lt;typename T_&gt; using add_ref_rv;</code></td>
+        <td>adds rvalue-reference.</td>
+      </tr>
+      <tr>
+        <td><code>template&lt;typename T_&gt; using add_ptr;</code></td>
+        <td>adds pointer.</td>
+      </tr>
+      <tr>
+        <td><code>template&lt;typename T_&gt; using remove_const;</code></td>
+        <td>removes const qualifier.</td>
+      </tr>
+      <tr>
+        <td><code>template&lt;typename T_&gt; using remove_volatile;</code></td>
+        <td>removes volatile qualifier.</td>
+      </tr>
+      ot2(template&lt;typename T_&gt; using remove_cv;, removes const and volatile qualifier.);
+    </table>
+
+    <h2>Functions</h2>
+    <p>These are defined in <code>namesapce util</code>.</p>
+    <table border="1"><tr><th>Declaration</th><th>Description</th></tr>
+      <tr>
+        <td><code>inline constexpr bool constevaluating(void)noexcept;</code></td>
+        <td>returns true if constevaluated.</td>
+      </tr>
+      <tr>
+        <td><code>template&lt;typename T_&gt; type::add_ref_rv&lt;T_&gt; declval(void)noexcept;</code></td>
+        <td>returns any non-evaluable value of the type. (Use in decltype(), noexcept(), etc..)</td>
+      </tr>
+    </table>
+  </body>
+</html>
