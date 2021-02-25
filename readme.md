@@ -12,4 +12,14 @@ Also, this GitHub Page (https://ywlib-x.github.io/) contains ywlib's reference m
 
 ## Usage
 0. put ywlib-package wherever you like.
+1. include ywlib to your source-code.<br>`#include "[AnyPath]/ywlib"`
+2. access to the contents in `namespace yw`.
 
+## Sample Code
+```cpp
+#include "C:/ywlib/ywlib"
+yw::intt yw::main(nullptr) {
+  yw::print("Hello World.");
+  return 0;
+}
+```
