@@ -1,10 +1,11 @@
 ![License-MIT](https://img.shields.io/github/license/ywlib-x/ywlib-x.github.io?color=blue&style=plastic)
 
-# ywlib
+# ywlib-x
+ywlib-x helps to look up what is between Y & W.
 
-`<ywlib>`は以下の特徴を持つ、C++の統合ライブラリです。
-* C++標準ライブラリを代替可能。(ただし互換性はない)
-* グローバル名前空間への汚染が最小限。
+## what is _ywlib_
+_ywlib_ is a low-pollutive integrated C++ library.
 
-
-https://ywlib-x.github.io
+## Links
+* GitHub Page: https://ywlib-x.github.io
+* Repository: https://github.com/ywlib-x/ywlib/
