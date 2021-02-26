@@ -1,7 +1,6 @@
 ![License-MIT](https://img.shields.io/github/license/ywlib-x/ywlib-x.github.io?color=blue&style=plastic)
 
-# ywlib-x
-helps to lool up what is between Y & W.<br>
+***ywlib-x*** helps to lool up what is between Y & W.<br>
 So this "x" is attached as it should be, you know.
 
 <img src="./ywlib.png" alt="ywlib-logo" height="40"> is a low-pollutive integrated C++ library.
