@@ -8,4 +8,18 @@ So this "x" is attached as it should be, you know.😑
 You can get the package from https://github.com/ywlib-x/ywlib/.<br>
 Also, this GitHub Page (https://ywlib-x.github.io/) contains ywlib's reference manual.
 
+## Planned Structure
++ ywlib
+    + ywlib-0.hpp
+        + type.hpp
+        + utility.hpp
+        + constr.hpp
+        + sarray.hpp
+        + math.hpp
+        + vector.hpp
+    + ywlib-1.hpp
+        + ioput.hpp
+        + varray.hpp
+        + string.hpp
+
 Thank you.🙂
