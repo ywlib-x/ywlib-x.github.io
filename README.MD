@@ -10,6 +10,7 @@ Also, this GitHub Page (https://ywlib-x.github.io/) contains ywlib's reference m
 
 ## Planned Structure
 + ywlib
++ inc/
     + ywlib-0.hpp
         + type.hpp
         + utility.hpp
@@ -21,5 +22,8 @@ Also, this GitHub Page (https://ywlib-x.github.io/) contains ywlib's reference m
         + ioput.hpp
         + varray.hpp
         + string.hpp
++ lib/
+    + ywlib-1.lib
+
 
 Thank you.🙂
